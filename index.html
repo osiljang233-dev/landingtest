@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="검증된 최신 주소를 쉽고 빠르게 확인하세요. 주소캠프">
+  <title>주소캠프 — 찾고 있던 주소, 가장 빠르게</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient-orb ambient-orb--1"></div>
+    <div class="ambient-orb ambient-orb--2"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo">
+        <span class="logo-mark"></span>
+        주소캠프
+      </a>
+      <div class="nav-links">
+        <a href="#platforms" class="nav-text">Platforms</a>
+        <a href="#services" class="nav-text">Services</a>
+        <a href="#visit" class="nav-cta">시작하기</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 01 Hero -->
+    <section class="hero section section--hero" id="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="hero-badge reveal">
+            <span class="badge-dot"></span>
+            Verified Address Platform
+          </div>
+          <h1 class="hero-headline reveal">
+            <span class="hero-headline__line1">찾고 있던 주소,</span><br>
+            <span class="gradient-text">가장 빠르게</span>
+          </h1>
+          <div class="hero-actions reveal">
+            <a href="#visit" class="btn btn-primary">주소 확인하기</a>
+            <a href="#brand" class="btn btn-ghost">플랫폼 보기</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-parallax>
+          <div class="hero-glow"></div>
+
+          <div class="hero-dash">
+            <div class="hero-dash-bar">
+              <span class="ui-dot ui-dot--red"></span>
+              <span class="ui-dot ui-dot--yellow"></span>
+              <span class="ui-dot ui-dot--green"></span>
+              <span class="hero-dash-title">주소캠프 Dashboard</span>
+              <span class="hero-dash-live"><span class="pulse-dot"></span> Live</span>
+            </div>
+            <div class="hero-dash-body">
+              <div class="hero-dash-side">
+                <span class="hero-dash-nav hero-dash-nav--on">대시보드</span>
+                <span class="hero-dash-nav">주소 검색</span>
+                <span class="hero-dash-nav">네트워크</span>
+                <span class="hero-dash-nav">보안</span>
+              </div>
+              <div class="hero-dash-main">
+                <div class="hero-dash-search">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                  <span>주소 검색...</span>
+                  <kbd class="hero-kbd">⌘K</kbd>
+                </div>
+                <div class="hero-dash-kpis">
+                  <div class="hero-kpi">
+                    <span class="hero-kpi-val">6</span>
+                    <span class="hero-kpi-lbl">사이트</span>
+                  </div>
+                  <div class="hero-kpi hero-kpi--accent">
+                    <span class="hero-kpi-val hero-kpi-val--live">Live</span>
+                    <span class="hero-kpi-lbl">상태</span>
+                  </div>
+                  <div class="hero-kpi">
+                    <span class="hero-kpi-val">128</span>
+                    <span class="hero-kpi-lbl">주소</span>
+                  </div>
+                  <div class="hero-kpi">
+                    <span class="hero-kpi-val">99%</span>
+                    <span class="hero-kpi-lbl">가동률</span>
+                  </div>
+                </div>
+                <ul class="hero-dash-list">
+                  <li class="hero-dash-item hero-dash-item--live">
+                    <span class="ui-result-dot"></span>
+                    <span>무료슬롯</span>
+                    <em>방금 전</em>
+                  </li>
+                  <li class="hero-dash-item">
+                    <span class="ui-result-dot ui-result-dot--muted"></span>
+                    <span>에볼루션 분석기</span>
+                    <em>2분 전</em>
+                  </li>
+                  <li class="hero-dash-item">
+                    <span class="ui-result-dot ui-result-dot--muted"></span>
+                    <span>테더 계산기</span>
+                    <em>5분 전</em>
+                  </li>
+                  <li class="hero-dash-item">
+                    <span class="ui-result-dot ui-result-dot--muted"></span>
+                    <span>주소왕</span>
+                    <em>실시간</em>
+                  </li>
+                  <li class="hero-dash-item">
+                    <span class="ui-result-dot ui-result-dot--muted"></span>
+                    <span>링크놀자</span>
+                    <em>3분 전</em>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui-float ui-float--verify">
+            <div class="verify-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <span class="ui-card-label">Verified</span>
+              <strong>최신 링크 반영</strong>
+            </div>
+          </div>
+
+          <div class="ui-float ui-float--stat">
+            <span class="stat-ring">
+              <svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.5" fill="none" stroke="rgba(94,106,210,0.15)" stroke-width="3"/><circle cx="18" cy="18" r="15.5" fill="none" stroke="url(#ringGrad)" stroke-width="3" stroke-dasharray="78 100" stroke-linecap="round" transform="rotate(-90 18 18)"/><defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5e6ad2"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+            </span>
+            <div>
+              <strong>6+</strong>
+              <span>연결 사이트</span>
+            </div>
+          </div>
+
+          <div class="ui-float ui-float--pulse">
+            <span class="pulse-dot"></span>
+            <span>실시간 모니터링</span>
+          </div>
+
+          <div class="ui-float ui-float--notif">
+            <span class="notif-icon">↑</span>
+            <div>
+              <span class="ui-card-label">Update</span>
+              <strong>주소 동기화 완료</strong>
+            </div>
+          </div>
+
+          <div class="ui-float ui-float--users">
+            <div class="avatar-stack">
+              <span></span><span></span><span></span>
+            </div>
+            <span>6개 플랫폼 연결</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 AddressCamp Showcase -->
+    <section class="brand section section--major" id="brand">
+      <div class="brand-header reveal">
+        <span class="section-num">02</span>
+        <p class="eyebrow">AddressCamp</p>
+        <h2 class="section-title section-title--hero">6개 플랫폼 네트워크</h2>
+      </div>
+
+      <div class="brand-stage reveal">
+        <div class="brand-copy">
+          <p class="brand-lead">검증된 주소의 통합 허브.<br>6개 사이트가 하나의 네트워크로 연결됩니다.</p>
+          <ul class="brand-pillars">
+            <li>
+              <span class="pillar-num">01</span>
+              <div>
+                <strong>6개 사이트 네트워크</strong>
+                <span>통합 주소 허브 운영</span>
+              </div>
+            </li>
+            <li>
+              <span class="pillar-num">02</span>
+              <div>
+                <strong>실시간 주소 업데이트</strong>
+                <span>차단 즉시 자동 반영</span>
+              </div>
+            </li>
+            <li>
+              <span class="pillar-num">03</span>
+              <div>
+                <strong>24시간 모니터링</strong>
+                <span>상시 네트워크 감시</span>
+              </div>
+            </li>
+            <li>
+              <span class="pillar-num">04</span>
+              <div>
+                <strong>검증된 최신 주소</strong>
+                <span>실시간 검증 시스템</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="net-graph" aria-label="6개 플랫폼 네트워크">
+          <svg class="net-graph-svg" viewBox="0 0 600 500" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <line x1="300" y1="250" x2="300" y2="70" class="net-graph-line"/>
+            <line x1="300" y1="250" x2="480" y2="120" class="net-graph-line"/>
+            <line x1="300" y1="250" x2="520" y2="280" class="net-graph-line"/>
+            <line x1="300" y1="250" x2="420" y2="430" class="net-graph-line"/>
+            <line x1="300" y1="250" x2="80" y2="280" class="net-graph-line"/>
+          </svg>
+
+          <a href="#" class="net-node net-node--hub">
+            <span class="net-node-badge">Main</span>
+            <span class="net-node-icon"><span class="logo-mark logo-mark--sm"></span></span>
+            <span class="net-node-name">주소캠프</span>
+            <span class="net-node-desc">통합 허브</span>
+          </a>
+          <a href="#" class="net-node net-node--n1">
+            <span class="net-node-icon"><span class="net-letter">왕</span></span>
+            <span class="net-node-name">주소왕</span>
+          </a>
+          <a href="#" class="net-node net-node--n2">
+            <span class="net-node-icon"><span class="net-letter">1</span></span>
+            <span class="net-node-name">주소일번지</span>
+          </a>
+          <a href="#" class="net-node net-node--n3">
+            <span class="net-node-icon"><span class="net-letter">친</span></span>
+            <span class="net-node-name">주소친구</span>
+          </a>
+          <a href="#" class="net-node net-node--n4">
+            <span class="net-node-icon"><span class="net-letter">링</span></span>
+            <span class="net-node-name">링크놀자</span>
+          </a>
+          <a href="#" class="net-node net-node--n5">
+            <span class="net-node-icon"><span class="net-letter">바</span></span>
+            <span class="net-node-name">바로주소</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Why AddressCamp -->
+    <section class="why section section--standard" id="why">
+      <div class="section-header reveal">
+        <span class="section-num">03</span>
+        <h2 class="section-title">왜 사용자들이 주소캠프를 선택할까</h2>
+      </div>
+      <div class="why-grid">
+        <article class="why-card reveal">
+          <span class="why-num">01</span>
+          <h3 class="why-title">더 빠른 탐색</h3>
+          <p class="why-desc">원하는 정보를 가장 짧은 경로로.</p>
+          <div class="why-visual" aria-hidden="true">
+            <div class="why-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+          </div>
+        </article>
+        <article class="why-card reveal">
+          <span class="why-num">02</span>
+          <h3 class="why-title">검증된 연결</h3>
+          <p class="why-desc">신뢰할 수 있는 최신 주소 제공.</p>
+          <div class="why-visual" aria-hidden="true">
+            <div class="why-icon-wrap why-icon-wrap--blue">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+          </div>
+        </article>
+        <article class="why-card reveal">
+          <span class="why-num">03</span>
+          <h3 class="why-title">통합 서비스</h3>
+          <p class="why-desc">여러 기능을 하나의 플랫폼에서.</p>
+          <div class="why-visual" aria-hidden="true">
+            <div class="why-icon-wrap why-icon-wrap--violet">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+          </div>
+        </article>
+        <article class="why-card reveal">
+          <span class="why-num">04</span>
+          <h3 class="why-title">실시간 운영</h3>
+          <p class="why-desc">언제 접속해도 최신 상태 유지.</p>
+          <div class="why-visual" aria-hidden="true">
+            <div class="why-nodes">
+              <span class="why-node why-node--hub"></span>
+              <span class="why-node"></span><span class="why-node"></span>
+              <span class="why-node"></span><span class="why-node"></span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 04 Core Services -->
+    <section class="services section section--compact" id="services">
+      <div class="section-header reveal">
+        <span class="section-num">04</span>
+        <p class="eyebrow">Core Services</p>
+        <h2 class="section-title">자체 서비스</h2>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card reveal">
+          <div class="product-mockup">
+            <div class="product-screen">
+              <div class="product-ui product-ui--slot">
+                <div class="slot-game">
+                  <header class="slot-game__hdr">
+                    <span class="slot-game__brand">LUCKY 7s</span>
+                    <div class="slot-game__hdr-stats">
+                      <div class="slot-game__stat"><em>Balance</em><strong>₩50,000</strong></div>
+                      <div class="slot-game__stat"><em>Bet</em><strong>500</strong></div>
+                    </div>
+                  </header>
+                  <div class="slot-game__cabinet">
+                    <div class="slot-game__glow" aria-hidden="true"></div>
+                    <div class="slot-game__reels" aria-hidden="true">
+                      <div class="slot-game__reel">
+                        <span class="slot-sym slot-sym--cherry"></span>
+                        <span class="slot-sym slot-sym--seven slot-sym--hit">7</span>
+                        <span class="slot-sym slot-sym--bar">BAR</span>
+                      </div>
+                      <div class="slot-game__reel">
+                        <span class="slot-sym slot-sym--diamond"></span>
+                        <span class="slot-sym slot-sym--seven slot-sym--hit">7</span>
+                        <span class="slot-sym slot-sym--cherry"></span>
+                      </div>
+                      <div class="slot-game__reel slot-game__reel--center">
+                        <span class="slot-sym slot-sym--wild">WILD</span>
+                        <span class="slot-sym slot-sym--seven slot-sym--hit">7</span>
+                        <span class="slot-sym slot-sym--diamond"></span>
+                      </div>
+                      <div class="slot-game__reel">
+                        <span class="slot-sym slot-sym--bar">BAR</span>
+                        <span class="slot-sym slot-sym--seven slot-sym--hit">7</span>
+                        <span class="slot-sym slot-sym--cherry"></span>
+                      </div>
+                      <div class="slot-game__reel">
+                        <span class="slot-sym slot-sym--cherry"></span>
+                        <span class="slot-sym slot-sym--seven slot-sym--hit">7</span>
+                        <span class="slot-sym slot-sym--bar">BAR</span>
+                      </div>
+                    </div>
+                    <div class="slot-game__line" aria-hidden="true"></div>
+                    <span class="slot-game__lines">25 PAYLINES</span>
+                  </div>
+                  <footer class="slot-game__footer">
+                    <button type="button" class="slot-game__adj" aria-hidden="true">−</button>
+                    <button type="button" class="slot-game__spin">SPIN</button>
+                    <button type="button" class="slot-game__adj" aria-hidden="true">+</button>
+                  </footer>
+                  <div class="slot-game__payout" aria-hidden="true">WIN <strong>2,500</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">무료슬롯</h3>
+            <div class="product-tags">
+              <span>무료 체험</span>
+              <span>빠른 접근</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-mockup">
+            <div class="product-screen">
+              <div class="product-ui product-ui--evo">
+                <div class="bac-hero">
+                  <div class="bac-hero__hdr">
+                    <div class="bac-hero__brand">
+                      <strong>Evolution Analyzer</strong>
+                      <span>Baccarat Intelligence</span>
+                    </div>
+                    <span class="bac-hero__live"><span class="pulse-dot"></span> Live Analysis</span>
+                  </div>
+                  <div class="bac-hero__kpis">
+                    <div class="bac-kpi bac-kpi--primary">
+                      <span class="bac-kpi__label">Win Rate</span>
+                      <span class="bac-kpi__value">48.7<span>%</span></span>
+                      <span class="bac-kpi__delta">+2.1%</span>
+                    </div>
+                    <div class="bac-kpi">
+                      <span class="bac-kpi__label">Trend Score</span>
+                      <span class="bac-kpi__value">72</span>
+                    </div>
+                  </div>
+                  <div class="bac-hero__panel">
+                    <div class="bac-trend">
+                      <div class="bac-trend__head">
+                        <span class="bac-trend__tag bac-trend__tag--player">Player Trend</span>
+                        <span class="bac-trend__val">52%</span>
+                      </div>
+                      <div class="bac-road" aria-hidden="true">
+                        <i class="bac-bead bac-bead--p"></i><i class="bac-bead bac-bead--b"></i><i class="bac-bead bac-bead--p"></i><i class="bac-bead bac-bead--p"></i><i class="bac-bead bac-bead--b"></i><i class="bac-bead bac-bead--p"></i><i class="bac-bead bac-bead--b"></i><i class="bac-bead bac-bead--b"></i><i class="bac-bead bac-bead--p"></i><i class="bac-bead bac-bead--p"></i><i class="bac-bead bac-bead--p"></i><i class="bac-bead bac-bead--b"></i>
+                      </div>
+                    </div>
+                    <div class="bac-trend">
+                      <div class="bac-trend__head">
+                        <span class="bac-trend__tag bac-trend__tag--banker">Banker Trend</span>
+                        <span class="bac-trend__val">48%</span>
+                      </div>
+                      <div class="bac-road" aria-hidden="true">
+                        <i class="bac-bead bac-bead--b"></i><i class="bac-bead bac-bead--b"></i><i class="bac-bead bac-bead--p"></i><i class="bac-bead bac-bead--b"></i><i class="bac-bead bac-bead--b"></i><i class="bac-bead bac-bead--b"></i><i class="bac-bead bac-bead--p"></i><i class="bac-bead bac-bead--b"></i><i class="bac-bead bac-bead--b"></i><i class="bac-bead bac-bead--b"></i><i class="bac-bead bac-bead--p"></i><i class="bac-bead bac-bead--t"></i>
+                      </div>
+                    </div>
+                    <div class="bac-trend bac-trend--dragon">
+                      <div class="bac-trend__head">
+                        <span class="bac-trend__tag bac-trend__tag--dragon">Dragon Trend</span>
+                        <span class="bac-dragon-badge">5 Streak</span>
+                      </div>
+                      <div class="bac-dragon" aria-hidden="true">
+                        <span class="bac-dragon__seg bac-dragon__seg--b"></span>
+                        <span class="bac-dragon__seg bac-dragon__seg--b"></span>
+                        <span class="bac-dragon__seg bac-dragon__seg--b"></span>
+                        <span class="bac-dragon__seg bac-dragon__seg--b"></span>
+                        <span class="bac-dragon__seg bac-dragon__seg--b bac-dragon__seg--active"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <svg class="bac-spark" viewBox="0 0 280 32" preserveAspectRatio="none" aria-hidden="true">
+                    <line x1="0" y1="8" x2="280" y2="8" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                    <line x1="0" y1="16" x2="280" y2="16" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                    <line x1="0" y1="24" x2="280" y2="24" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                    <polyline points="0,22 35,20 70,18 105,14 140,16 175,12 210,10 245,8 280,6" fill="none" stroke="#3dd68c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">에볼루션 분석기</h3>
+            <div class="product-tags">
+              <span>실시간 분석</span>
+              <span>데이터 인사이트</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-mockup">
+            <div class="product-screen">
+              <div class="product-ui product-ui--fx">
+                <div class="fx-app ops-console ops-console--card">
+                  <div class="ops-header ops-header--compact">
+                    <div class="ops-header-left">
+                      <strong>USDT / KRW</strong>
+                      <span>Tether Calculator</span>
+                    </div>
+                    <div class="ops-header-right">
+                      <span class="ops-pill ops-pill--live"><span class="pulse-dot"></span> Live</span>
+                      <span class="ops-mono" id="fx-time">--:--</span>
+                    </div>
+                  </div>
+                  <div class="fx-rate-card fx-rate-card--compact">
+                    <div class="fx-rate-main">
+                      <span>1 USDT =</span>
+                      <strong>1,382.45</strong>
+                      <span>KRW</span>
+                    </div>
+                    <span class="fx-rate-change ops-delta ops-delta--up">+0.12%</span>
+                  </div>
+                  <div class="fx-converter fx-converter--compact">
+                    <label class="fx-field">
+                      <span>USDT</span>
+                      <div class="fx-input-wrap">
+                        <input type="text" value="1,000" readonly class="fx-input" aria-label="USDT amount">
+                        <em>USDT</em>
+                      </div>
+                    </label>
+                    <div class="fx-swap" aria-hidden="true">⇅</div>
+                    <label class="fx-field">
+                      <span>KRW</span>
+                      <div class="fx-input-wrap fx-input-wrap--out">
+                        <input type="text" value="1,381,207" readonly class="fx-input" aria-label="KRW output">
+                        <em>KRW</em>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="fx-fees fx-fees--card">
+                    <div class="fx-fee-row"><span>Exchange fee</span><strong>0.1%</strong></div>
+                    <div class="fx-fee-row"><span>Network fee</span><strong>₩1,200</strong></div>
+                    <div class="fx-fee-row fx-fee-row--total"><span>Net amount</span><strong>₩1,379,284</strong></div>
+                  </div>
+                  <div class="fx-history-mini">
+                    <div class="fx-history-row fx-history-row--head"><span>Time</span><span>Amount</span><span>KRW</span></div>
+                    <div class="fx-history-row"><span>14:28</span><span>500 USDT</span><span>691,225</span></div>
+                    <div class="fx-history-row"><span>14:15</span><span>2,000 USDT</span><span>2,764,900</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">테더 계산기</h3>
+            <div class="product-tags">
+              <span>USDT 환율</span>
+              <span>즉시 계산</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 05 Real-time Hub -->
+    <section class="dashboard section section--standard" id="dashboard">
+      <div class="section-header reveal">
+        <span class="section-num">05</span>
+        <p class="eyebrow">Real-time Hub</p>
+        <h2 class="section-title">실시간 주소 허브</h2>
+      </div>
+
+      <div class="dash-panel reveal">
+        <aside class="dash-sidebar">
+          <div class="dash-brand">
+            <span class="logo-mark logo-mark--sm"></span>
+            주소캠프
+          </div>
+          <nav class="dash-nav">
+            <span class="dash-nav-item dash-nav-item--active">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+              대시보드
+            </span>
+            <span class="dash-nav-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              주소 검색
+            </span>
+            <span class="dash-nav-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              보안
+            </span>
+            <span class="dash-nav-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20M2 12h20"/></svg>
+              네트워크
+            </span>
+          </nav>
+          <div class="dash-sidebar-foot">
+            <span class="dash-sidebar-status"><span class="status-pulse"></span> 시스템 정상</span>
+          </div>
+        </aside>
+
+        <div class="dash-main ops-console ops-console--light">
+          <div class="ops-header">
+            <div class="ops-header-left">
+              <strong>Address Network Monitor</strong>
+              <span>Production · ap-northeast-2</span>
+            </div>
+            <div class="ops-header-right">
+              <span class="ops-pill ops-pill--live"><span class="pulse-dot"></span> Live</span>
+              <span class="ops-mono" id="dash-time">--:--:--</span>
+            </div>
+          </div>
+
+          <div class="ops-metrics ops-metrics--6">
+            <div class="ops-metric"><span class="ops-metric-label">Active Sites</span><strong>6/6</strong><em class="ops-delta ops-delta--flat">All up</em></div>
+            <div class="ops-metric"><span class="ops-metric-label">Uptime</span><strong>99.94%</strong><em class="ops-delta ops-delta--up">30d</em></div>
+            <div class="ops-metric"><span class="ops-metric-label">Response Time</span><strong>142ms</strong><em class="ops-delta ops-delta--down">p50</em></div>
+            <div class="ops-metric"><span class="ops-metric-label">Traffic</span><strong>18.4k</strong><em class="ops-delta ops-delta--up">req/h</em></div>
+            <div class="ops-metric"><span class="ops-metric-label">Last Update</span><strong>12s</strong><em class="ops-delta ops-delta--live">ago</em></div>
+            <div class="ops-metric"><span class="ops-metric-label">Verification</span><strong>124/128</strong><em class="ops-delta ops-delta--up">96.9%</em></div>
+          </div>
+
+          <div class="ops-grid-2">
+            <div class="ops-panel">
+              <div class="ops-panel-head"><span>Traffic</span><span class="ops-mono">Last 1h</span></div>
+              <svg class="ops-chart ops-chart--line" viewBox="0 0 320 90" preserveAspectRatio="none" aria-hidden="true">
+                <line x1="0" y1="22" x2="320" y2="22" class="ops-grid-line"/>
+                <line x1="0" y1="45" x2="320" y2="45" class="ops-grid-line"/>
+                <line x1="0" y1="68" x2="320" y2="68" class="ops-grid-line"/>
+                <polyline points="0,65 32,58 64,62 96,48 128,52 160,38 192,42 224,30 256,35 288,22 320,18" class="ops-line"/>
+                <polyline points="0,65 32,58 64,62 96,48 128,52 160,38 192,42 224,30 256,35 288,22 320,18 320,90 0,90" class="ops-area"/>
+              </svg>
+              <div class="ops-axis"><span>-60m</span><span>-45m</span><span>-30m</span><span>-15m</span><span>Now</span></div>
+            </div>
+            <div class="ops-panel">
+              <div class="ops-panel-head"><span>Uptime</span><span class="ops-mono">30 days</span></div>
+              <div class="ops-uptime-grid" aria-hidden="true">
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--warn"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+                <span class="ops-uptime-cell ops-uptime-cell--ok"></span>
+              </div>
+              <div class="ops-uptime-legend">
+                <span><i class="ops-uptime-cell ops-uptime-cell--ok"></i> Operational</span>
+                <span><i class="ops-uptime-cell ops-uptime-cell--warn"></i> Degraded</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ops-panel ops-panel--table">
+            <div class="ops-panel-head"><span>Site Health</span><span class="ops-mono">6 endpoints</span></div>
+            <div class="ops-table ops-table--health">
+              <div class="ops-table-row ops-table-row--head"><span>Site</span><span>Status</span><span>Latency</span><span>Traffic</span><span>Last Check</span></div>
+              <div class="ops-table-row"><span>주소캠프</span><em class="tag-ok">Operational</em><span>98ms</span><span>4.2k/h</span><span>12s ago</span></div>
+              <div class="ops-table-row"><span>주소왕</span><em class="tag-ok">Operational</em><span>124ms</span><span>3.8k/h</span><span>12s ago</span></div>
+              <div class="ops-table-row"><span>주소일번지</span><em class="tag-warn">Degraded</em><span>210ms</span><span>2.1k/h</span><span>12s ago</span></div>
+              <div class="ops-table-row"><span>주소친구</span><em class="tag-ok">Operational</em><span>115ms</span><span>2.9k/h</span><span>12s ago</span></div>
+              <div class="ops-table-row"><span>링크놀자</span><em class="tag-ok">Operational</em><span>132ms</span><span>3.1k/h</span><span>12s ago</span></div>
+              <div class="ops-table-row"><span>바로주소</span><em class="tag-ok">Operational</em><span>108ms</span><span>2.3k/h</span><span>12s ago</span></div>
+            </div>
+          </div>
+
+          <div class="ops-panel ops-panel--table">
+            <div class="ops-panel-head"><span>Update Logs</span><span class="ops-mono">Live stream</span></div>
+            <div class="ops-table ops-table--logs">
+              <div class="ops-table-row"><span class="ops-mono">14:32:18</span><span class="ops-log-level ops-log-level--info">INFO</span><span>주소왕 address batch verified (24 records)</span></div>
+              <div class="ops-table-row"><span class="ops-mono">14:32:05</span><span class="ops-log-level ops-log-level--info">INFO</span><span>링크놀자 DNS propagation complete</span></div>
+              <div class="ops-table-row"><span class="ops-mono">14:31:48</span><span class="ops-log-level ops-log-level--warn">WARN</span><span>주소일번지 response time exceeded 200ms threshold</span></div>
+              <div class="ops-table-row"><span class="ops-mono">14:31:22</span><span class="ops-log-level ops-log-level--info">INFO</span><span>Global verification sync completed — 128/128</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Statistics -->
+    <section class="stats section section--compact" id="stats">
+      <div class="section-header reveal">
+        <span class="section-num">06</span>
+        <p class="eyebrow">Statistics</p>
+        <h2 class="section-title">플랫폼 현황</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-card-value">6<span class="stat-unit">개</span></div>
+          <div class="stat-card-label">운영 플랫폼</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-card-value">24<span class="stat-unit">시간</span></div>
+          <div class="stat-card-label">실시간 모니터링</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-card-value">365<span class="stat-unit">일</span></div>
+          <div class="stat-card-label">업데이트 운영</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-card-value">100<span class="stat-unit">%</span></div>
+          <div class="stat-card-label">모바일 최적화</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 Platforms -->
+    <section class="platforms section section--standard" id="platforms">
+      <div class="platforms-bg" aria-hidden="true">
+        <div class="platforms-aurora">
+          <div class="platforms-aurora__layer platforms-aurora__layer--violet"></div>
+          <div class="platforms-aurora__layer platforms-aurora__layer--indigo"></div>
+          <div class="platforms-aurora__layer platforms-aurora__layer--blue"></div>
+        </div>
+      </div>
+      <div class="section-header reveal">
+        <span class="section-num">07</span>
+        <h2 class="section-title">운영중인 플랫폼</h2>
+        <p class="section-subtitle">6개의 플랫폼이 하나의 네트워크로 연결됩니다.</p>
+      </div>
+      <div class="platform-grid">
+        <a href="#" class="platform-card platform-card--main reveal">
+          <span class="platform-card-num">01</span>
+          <span class="platform-card-icon">
+            <svg class="plat-logo plat-logo--hub" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="plat-grad-hub" x1="4" y1="4" x2="20" y2="20" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#a5b4fc"/><stop offset="1" stop-color="#8b5cf6"/>
+                </linearGradient>
+              </defs>
+              <circle cx="12" cy="12" r="7.5" stroke="url(#plat-grad-hub)" stroke-width="1.25" opacity="0.45"/>
+              <circle cx="12" cy="12" r="4.5" fill="url(#plat-grad-hub)"/>
+              <circle cx="12" cy="3.5" r="1.25" fill="#c4b5fd"/>
+              <circle cx="19.5" cy="16" r="1.25" fill="#93c5fd"/>
+              <circle cx="4.5" cy="16" r="1.25" fill="#a5b4fc"/>
+              <circle cx="12" cy="12" r="1.5" fill="#fff" opacity="0.9"/>
+            </svg>
+          </span>
+          <h3 class="platform-card-name">주소캠프</h3>
+          <p class="platform-card-desc">메인 허브</p>
+          <hr class="platform-card-divider">
+          <ul class="platform-card-features">
+            <li>통합 주소 검색</li>
+            <li>실시간 상태 모니터링</li>
+            <li>6개 사이트 연결</li>
+          </ul>
+          <span class="platform-card-cta">플랫폼 방문 <span aria-hidden="true">→</span></span>
+        </a>
+        <a href="#" class="platform-card reveal">
+          <span class="platform-card-num">02</span>
+          <span class="platform-card-icon">
+            <svg class="plat-logo plat-logo--rank" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="plat-grad-rank" x1="4" y1="20" x2="20" y2="4" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#5e6ad2"/><stop offset="1" stop-color="#8b5cf6"/>
+                </linearGradient>
+              </defs>
+              <rect x="4" y="14" width="4.5" height="6" rx="1.25" fill="url(#plat-grad-rank)" opacity="0.55"/>
+              <rect x="9.75" y="10" width="4.5" height="10" rx="1.25" fill="url(#plat-grad-rank)" opacity="0.78"/>
+              <rect x="15.5" y="5.5" width="4.5" height="14.5" rx="1.25" fill="url(#plat-grad-rank)"/>
+              <path d="M4 14.5h16" stroke="#5e6ad2" stroke-width="1" opacity="0.25"/>
+            </svg>
+          </span>
+          <h3 class="platform-card-name">주소왕</h3>
+          <p class="platform-card-desc">인기 주소 플랫폼</p>
+          <hr class="platform-card-divider">
+          <ul class="platform-card-features">
+            <li>인기 사이트 순위</li>
+            <li>빠른 주소 확인</li>
+            <li>모바일 최적화</li>
+          </ul>
+          <span class="platform-card-cta">플랫폼 방문 <span aria-hidden="true">→</span></span>
+        </a>
+        <a href="#" class="platform-card reveal">
+          <span class="platform-card-num">03</span>
+          <span class="platform-card-icon">
+            <svg class="plat-logo plat-logo--speed" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="plat-grad-speed" x1="3" y1="12" x2="21" y2="12" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#6366f1"/><stop offset="1" stop-color="#3b82f6"/>
+                </linearGradient>
+              </defs>
+              <path d="M5 12h9.5" stroke="url(#plat-grad-speed)" stroke-width="2.25" stroke-linecap="round"/>
+              <path d="M13 8.5l5 3.5-5 3.5" stroke="url(#plat-grad-speed)" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 8.5v7" stroke="#5e6ad2" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+              <circle cx="4" cy="12" r="1.75" fill="#8b5cf6" opacity="0.5"/>
+            </svg>
+          </span>
+          <h3 class="platform-card-name">주소일번지</h3>
+          <p class="platform-card-desc">빠른 탐색</p>
+          <hr class="platform-card-divider">
+          <ul class="platform-card-features">
+            <li>카테고리별 탐색</li>
+            <li>즉시 검색 결과</li>
+            <li>최신 주소 반영</li>
+          </ul>
+          <span class="platform-card-cta">플랫폼 방문 <span aria-hidden="true">→</span></span>
+        </a>
+        <a href="#" class="platform-card reveal">
+          <span class="platform-card-num">04</span>
+          <span class="platform-card-icon">
+            <svg class="plat-logo plat-logo--connect" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="plat-grad-connect" x1="6" y1="6" x2="18" y2="18" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#6366f1"/><stop offset="1" stop-color="#a78bfa"/>
+                </linearGradient>
+              </defs>
+              <circle cx="8" cy="12" r="3.75" stroke="url(#plat-grad-connect)" stroke-width="1.75"/>
+              <circle cx="16" cy="12" r="3.75" stroke="url(#plat-grad-connect)" stroke-width="1.75"/>
+              <line x1="11.5" y1="12" x2="12.5" y2="12" stroke="url(#plat-grad-connect)" stroke-width="2.25" stroke-linecap="round"/>
+              <circle cx="8" cy="12" r="1.25" fill="#8b5cf6"/>
+              <circle cx="16" cy="12" r="1.25" fill="#6366f1"/>
+            </svg>
+          </span>
+          <h3 class="platform-card-name">주소친구</h3>
+          <p class="platform-card-desc">실시간 링크</p>
+          <hr class="platform-card-divider">
+          <ul class="platform-card-features">
+            <li>실시간 링크 공유</li>
+            <li>검증된 URL</li>
+            <li>안전한 접속</li>
+          </ul>
+          <span class="platform-card-cta">플랫폼 방문 <span aria-hidden="true">→</span></span>
+        </a>
+        <a href="#" class="platform-card reveal">
+          <span class="platform-card-num">05</span>
+          <span class="platform-card-icon">
+            <svg class="plat-logo plat-logo--link" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="plat-grad-link" x1="5" y1="5" x2="19" y2="19" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#5e6ad2"/><stop offset="1" stop-color="#7c3aed"/>
+                </linearGradient>
+              </defs>
+              <path d="M9.2 10.8a3.2 3.2 0 014.5 0l1.2 1.2a3.2 3.2 0 010 4.5 3.2 3.2 0 01-4.5 0" stroke="url(#plat-grad-link)" stroke-width="1.75" stroke-linecap="round"/>
+              <path d="M14.8 13.2a3.2 3.2 0 01-4.5 0l-1.2-1.2a3.2 3.2 0 010-4.5 3.2 3.2 0 014.5 0" stroke="url(#plat-grad-link)" stroke-width="1.75" stroke-linecap="round"/>
+              <circle cx="12" cy="12" r="1.25" fill="#8b5cf6" opacity="0.7"/>
+            </svg>
+          </span>
+          <h3 class="platform-card-name">링크놀자</h3>
+          <p class="platform-card-desc">커뮤니티 연결</p>
+          <hr class="platform-card-divider">
+          <ul class="platform-card-features">
+            <li>커뮤니티 링크</li>
+            <li>추천 주소 모음</li>
+            <li>사용자 참여</li>
+          </ul>
+          <span class="platform-card-cta">플랫폼 방문 <span aria-hidden="true">→</span></span>
+        </a>
+        <a href="#" class="platform-card reveal">
+          <span class="platform-card-num">06</span>
+          <span class="platform-card-icon">
+            <svg class="plat-logo plat-logo--instant" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="plat-grad-instant" x1="3" y1="12" x2="21" y2="12" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3b82f6"/><stop offset="1" stop-color="#6366f1"/>
+                </linearGradient>
+              </defs>
+              <circle cx="12" cy="12" r="7.5" stroke="url(#plat-grad-instant)" stroke-width="1.5" opacity="0.5"/>
+              <path d="M9 12h5.5" stroke="url(#plat-grad-instant)" stroke-width="2.25" stroke-linecap="round"/>
+              <path d="M13 9l4 3-4 3" stroke="url(#plat-grad-instant)" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="9" cy="12" r="1.75" fill="#5e6ad2"/>
+              <path d="M12 4.5v1.5M12 18v1.5M4.5 12H6M18 12h1.5" stroke="#93c5fd" stroke-width="1.25" stroke-linecap="round" opacity="0.35"/>
+            </svg>
+          </span>
+          <h3 class="platform-card-name">바로주소</h3>
+          <p class="platform-card-desc">원클릭 접속</p>
+          <hr class="platform-card-divider">
+          <ul class="platform-card-features">
+            <li>원클릭 이동</li>
+            <li>단축 URL</li>
+            <li>즉시 연결</li>
+          </ul>
+          <span class="platform-card-cta">플랫폼 방문 <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 08 CTA -->
+    <section class="cta section section--cta" id="visit">
+      <div class="cta-inner reveal">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="cta-content">
+          <p class="cta-eyebrow">Ready to start?</p>
+          <h2 class="cta-headline">
+            필요한 주소를<br>
+            <span class="gradient-text-light">가장 빠르게</span>
+          </h2>
+          <a href="https://jusocamp.com" class="btn btn-cta" id="main-site-link">
+            주소 확인하기
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="cta-visual" aria-hidden="true">
+          <div class="cta-orbit">
+            <div class="cta-orbit-ring"></div>
+            <div class="cta-orbit-dot cta-orbit-dot--1"></div>
+            <div class="cta-orbit-dot cta-orbit-dot--2"></div>
+            <div class="cta-orbit-dot cta-orbit-dot--3"></div>
+            <div class="cta-core">
+              <span class="logo-mark logo-mark--lg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#" class="footer-logo">
+        <span class="logo-mark logo-mark--sm"></span>
+        주소캠프
+      </a>
+      <span class="footer-copy">&copy; 2026 주소캠프</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
